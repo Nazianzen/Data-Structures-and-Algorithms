@@ -1,6 +1,8 @@
 package dev.getgiddy.dsa.main;
 
-import dev.getgiddy.dsa.util.Factorial;
+import dev.getgiddy.dsa.sort.MergeSort;
+
+import java.util.Arrays;
 
 public class Main {
 
@@ -8,8 +10,8 @@ public class Main {
 
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 
-//        System.out.println(Arrays.toString(new ShellSort().sort(intArray)));
-        System.out.println(Factorial.recursiveFactorial(3));
+        System.out.println(Arrays.toString(MergeSort.mergeSort(intArray, 0, intArray.length)));
+
     }
 
 }
